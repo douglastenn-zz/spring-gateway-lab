@@ -2,13 +2,12 @@ package io.douglastenn.beerservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
 public class BeerServiceApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(BeerServiceApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(BeerServiceApplication.class, args);
+    }
 
 }

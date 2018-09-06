@@ -1,14 +1,7 @@
 package io.douglastenn.beerservice.gateway;
 
 import io.douglastenn.beerservice.domain.Beer;
+import org.springframework.data.mongodb.repository.ReactiveMongoRepository;
 
-import java.util.List;
-import java.util.Optional;
-
-public interface BeerGateway {
-    Beer save(Beer beer);
-
-    Optional<Beer> findById(String id);
-
-    List<Beer> findAll();
+public interface BeerGateway extends ReactiveMongoRepository<Beer, String> {
 }
